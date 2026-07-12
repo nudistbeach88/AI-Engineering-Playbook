@@ -1,6 +1,6 @@
 # Quality Gates
 
-These gates apply to future implementation prompts and completion reviews. A gate is satisfied by evidence, not assertion. If a gate is not applicable, state why; if it cannot be verified, report the uncertainty.
+These gates apply to future implementation prompts and completion reviews. A gate is satisfied by evidence, not assertion. Verification rigor should scale with risk, reversibility, scope, and user impact. If a gate is not applicable, mark it not applicable with a brief reason; if it cannot be verified, report the uncertainty.
 
 ## Before Implementation
 
@@ -10,6 +10,10 @@ These gates apply to future implementation prompts and completion reviews. A gat
 - [ ] Verify required files and media exist; never invent assets.
 - [ ] Define the requested milestone and observable acceptance criteria.
 - [ ] Record uncertainties that could materially change the solution.
+
+## Risk Gate
+
+- [ ] Determine whether the change affects security, privacy, authentication or authorization, permissions, secrets or credentials, destructive operations, stored data, data migration, data integrity, or user trust and exposure. If relevant, identify the risk before implementation and verify its treatment before completion; high-risk or irreversible changes require proportionally stronger verification and rollback planning. If not relevant, mark this gate not applicable with a brief reason.
 
 ## During Implementation
 

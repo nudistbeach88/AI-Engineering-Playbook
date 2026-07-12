@@ -4,15 +4,14 @@ The roadmap records direction without committing to speculative documentation. I
 
 ## Current Focus
 
-- Use Version 0.1 on real projects.
-- Collect concrete friction, failures, exceptions, and successful practices.
-- Keep the core documents consistent and concise.
+- Complete the Version 0.2.1 refinement for evidence integrity, source-of-truth clarity, proportional risk gates, naming and version consistency, and Mental Model First communication.
+- Preserve the lean structure and review the release before it is committed.
 
 ## Next Improvements
 
-- Review findings from the first projects and identify the smallest reusable refinements.
-- Clarify source-of-truth and acceptance-criteria guidance where teams encounter ambiguity.
-- Add evidence requirements to anti-pattern entries that recur in practice.
+- Use Version 0.2.1 on real projects and collect concrete friction, failures, exceptions, and successful practices.
+- Evaluate accepted lessons or equivalent recoverable evidence before making substantive methodology changes. Editorial corrections do not require a formal lesson.
+- Keep the core documents consistent and concise.
 
 ## Future Ideas
 
@@ -22,7 +21,7 @@ The roadmap records direction without committing to speculative documentation. I
 
 ## Completed
 
-- Established the Version 0.1 repository structure and core methodology.
+- Established the Version 0.1.0 repository structure and core methodology.
 - Defined initial quality gates and AI engineering anti-patterns.
 - Established version history and an evidence-led evolution path.
 

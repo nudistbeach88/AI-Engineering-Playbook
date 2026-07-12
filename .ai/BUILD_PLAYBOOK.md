@@ -1,6 +1,6 @@
-# Nathan Build Playbook
+# AI Engineering Playbook: Build Methodology
 
-Status: Version 0.1 foundation
+Status: Version 0.2.1
 
 This is the parent document for the methodology. It defines the durable frame; details should be added only when real engineering experience justifies them.
 
@@ -18,7 +18,7 @@ Provide a reusable, evidence-led operating system for building maintainable soft
 
 ## Continuous Improvement Philosophy
 
-The methodology evolves from observed outcomes. Capture lessons after real work, distinguish reusable patterns from local circumstances, and make small versioned changes. A new rule should name the failure or opportunity it addresses and the evidence behind it.
+The methodology evolves because real engineering work reveals gaps, exceptions, and better practices that theory alone cannot predict. Improvements should come from observed outcomes, generalize beyond one project, and remain small enough to evaluate and reverse.
 
 ## Continuous Improvement Cycle
 
@@ -36,24 +36,21 @@ Playbook Updated
 Future Projects Improve
 ```
 
-Every completed project should contribute evidence back into the Playbook. Reusable findings are recorded in `docs/LESSONS.md`, reviewed by Nathan, and incorporated only when they produce a justified improvement. Accepted changes then guide future projects, completing the learning cycle.
+Every completed project should contribute evidence back into the Playbook. Review turns project outcomes into reusable findings recorded in `docs/LESSONS.md`; accepted improvements then guide future projects and complete the learning cycle.
 
 ## Constitution First Development
 
-Each project should define its non-negotiable product, engineering, security, and experience constraints before implementation. The constitution guides tradeoffs; it does not replace concrete requirements or acceptance criteria.
+Serious or durable projects should define their non-negotiable product, engineering, security, and experience constraints before implementation. The formality of the constitution should scale with project duration, risk, complexity, number of collaborators, and expected longevity. A disposable experiment does not require the ceremony of a long-lived product, but important constraints and intended outcomes must still be explicit. The constitution guides tradeoffs; it does not replace concrete requirements or acceptance criteria.
 
-## Source of Truth Hierarchy
+## Source of Truth Model
 
-When sources disagree, resolve the conflict before building. Use this default order, adapted explicitly when a project requires it:
+Two kinds of truth guide engineering work:
 
-1. Verified behavior and current repository state
-2. Approved project constitution and acceptance criteria
-3. Current architecture and interface contracts
-4. Project documentation and decisions
-5. Task prompts and conversational context
-6. Assumptions, conventions, and prior experience
+**Descriptive truth** is verified evidence of what currently exists or happens: repository state, rendered behavior, tests, logs, runtime output, and environment state. It cannot be ignored or replaced by assumption.
 
-Lower sources must not silently override higher ones. Record intentional exceptions.
+**Normative authority** defines the approved direction for what should exist or happen: the project constitution, approved requirements, acceptance criteria, architecture decisions, and approved milestone documentation. Current implementation cannot override that direction merely by being different.
+
+A verified defect is evidence of current reality, not proof of desired behavior. Conflict between descriptive truth and normative authority should trigger diagnosis and implementation work. Conversation context and assumptions must never override verified repository evidence or approved project authority; unresolved conflicts should be surfaced before proceeding.
 
 ## Repository Inspection Before Implementation
 
@@ -63,38 +60,41 @@ Inspect the actual repository before proposing changes: structure, instructions,
 
 Prompts should communicate outcomes, constraints, relevant context, acceptance criteria, and required evidence. They should direct inspection rather than embed guesses about the repository. Reusable methodology belongs here; project facts belong in the project.
 
-## Teaching Methodology
+## Communication & Teaching Methodology
 
-Technical teaching should create durable understanding, not merely simplify or compress information. Optimize for comprehension and retention rather than information density. Build an accurate mental model before introducing technical terminology.
+The Playbook should teach engineering, not merely report engineering. Communication should maximize durable understanding, retention, engineering intuition, and long-term judgment rather than information density. Never assume prior knowledge, but do not simplify by removing important concepts; simplify by introducing them in the right order. The goal is an accurate mental model, not memorized terminology or commands.
 
-This methodology applies to technical teaching, documentation, onboarding, and AI collaboration. It draws inspiration from communicators such as Bill Nye, whose use of clear analogies, storytelling, and progressively layered explanations made complex concepts memorable. It is not a general education framework; it is a practical protocol for engineering collaboration.
+This methodology is inspired by communicators such as Bill Nye, whose clear analogies, storytelling, and progressively layered explanations made complex concepts memorable. It applies to repository walkthroughs, architecture and implementation reviews, planning, prompting, debugging, Git and DevOps explanations, onboarding, documentation, code explanations, system design, and AI collaboration—not only beginner tutorials.
 
-### The Bill Nye Protocol
+### Mental Model First
 
-When introducing an unfamiliar technical concept:
+Build understanding before terminology. Explain purpose before procedure, concepts before commands, expected outcomes before execution, and risks before action. When appropriate, use this sequence:
 
-1. **Big Picture** — Explain what it is in one simple sentence.
-2. **Why It Matters** — Explain why the learner should care and what problem it solves.
-3. **Mental Model** — Give a memorable, accurate analogy before the technical definition so the learner can visualize the concept.
-4. **What Is Happening Right Now?** — Use the mental model to explain exactly what the current step is doing.
-5. **Risk** — Explain what could happen, including whether the action is reversible.
-6. **Success Criteria** — Describe the observable successful outcome before performing the step.
-7. **Execute** — Perform one step only; do not overload the learner.
-8. **Reinforce** — Explain what happened and connect it back to the mental model.
-9. **Connect** — Relate the concept to previously learned ideas, building an interconnected understanding rather than an isolated fact.
+1. **Big Picture** — State what is being done in one simple sentence.
+2. **Purpose** — Explain the problem it solves, why it matters, and why the learner should care.
+3. **Mental Model** — Introduce a memorable analogy before technical definitions without sacrificing accuracy.
+4. **Current Action** — Explain exactly what the current step is doing through the mental model.
+5. **Risk** — Explain what could happen, whether it is reversible, and whether concern is warranted.
+6. **Success Criteria** — Describe the observable successful outcome before execution.
+7. **Execute** — Perform one meaningful step at a time. Use progressive disclosure and add complexity only after understanding is established.
+8. **Reinforce** — Explain what happened and reconnect it to the original mental model.
+9. **Connect** — Relate the concept to previously learned ideas so understanding forms a connected system rather than isolated facts.
+
+Useful analogies might describe a repository as a notebook, Git as the notebook's memory, GitHub as a fireproof vault, a commit as a photograph, a branch as an alternate timeline, an API as a waiter, a database as a library, or a build pipeline as an assembly line. These examples are illustrative, not prescriptive; choose analogies that improve understanding without distorting the engineering reality.
 
 ### Communication Principles
 
-- Explain the purpose before the procedure.
-- Explain the mental model before the terminology.
-- Explain the expected outcome before the command.
 - Never assume prior knowledge; establish what the learner already understands.
-- Avoid unnecessary jargon, and define necessary terminology when introduced.
-- Use concrete, accurate analogies whenever possible.
-- Break large concepts into one-step learning increments.
-- Favor understanding over memorization.
+- Avoid unnecessary jargon and define necessary terminology when it becomes useful.
+- Favor memorable, technically accurate analogies.
+- Teach progressively and avoid unnecessary cognitive overload.
+- Ensure the learner understands why something exists before explaining how to use it.
 
-An explanation is successful when the learner can predict what will happen, recognize success or failure, and connect the new concept to the larger system—not merely repeat the terminology.
+### Engineering Reviews
+
+When appropriate, present reviews in this order: Big Picture, Purpose, Mental Model, What Changed, Why It Changed, Risks, Expected Outcome, Implementation Summary, Verification, Lessons Learned, and Next Recommendation. The objective is for Nathan to understand the engineering decision and its consequences, not merely receive an implementation report.
+
+Communication succeeds when the learner can explain why the concept exists, predict what will happen, recognize success or failure, connect it to the larger system, and make better future decisions.
 
 ## Role Assignment Philosophy
 
@@ -165,9 +165,9 @@ Report what changed, what was verified, the evidence obtained, known limitations
 After meaningful project milestones:
 
 1. Capture outcomes, surprises, failures, and effective practices.
-2. Separate project-specific facts from reusable lessons.
-3. Propose the smallest playbook change with supporting evidence.
-4. Review for contradiction, duplication, and unnecessary rigidity.
-5. Version the accepted change and observe it in later work.
+2. Separate project-specific facts from reusable lessons and retain recoverable evidence when available.
+3. Submit the lesson for Nathan's decision; acceptance approves the recommendation for incorporation but does not itself implement it.
+4. Apply the smallest approved playbook change and review it for contradiction, duplication, and unnecessary rigidity.
+5. Record the implementation in the changelog, version the release, and evaluate the result in later work.
 
 Future versions may deepen these sections, but only where use has exposed a real gap.

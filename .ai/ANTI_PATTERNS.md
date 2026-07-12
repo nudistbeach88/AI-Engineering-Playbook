@@ -1,6 +1,6 @@
 # AI Engineering Anti-Patterns
 
-This living catalog names recurring failure modes so they can be recognized and prevented. Add entries only when experience reveals a reusable pattern; include context and evidence when expanding the catalog.
+This living catalog names recurring failure modes so they can be recognized and prevented. Add entries only when experience reveals a reusable pattern; include context and evidence when expanding the catalog. When a future anti-pattern is promoted from a project lesson, include a lightweight reference to that lesson or its supporting evidence whenever available.
 
 ## Hallucinating Repository State
 
@@ -66,7 +66,7 @@ This living catalog names recurring failure modes so they can be recognized and 
 
 **Failure:** Letting prompt wording override verified repository behavior or approved project decisions.
 
-**Countermeasure:** Resolve conflicts using the source-of-truth hierarchy and record intentional changes.
+**Countermeasure:** Resolve conflicts using the source-of-truth model and record intentional changes.
 
 ## Dogmatic Methodology
 
