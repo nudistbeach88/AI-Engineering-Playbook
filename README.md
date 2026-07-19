@@ -10,11 +10,12 @@ Future projects should adopt `.ai/BUILD_PLAYBOOK.md` as the parent methodology a
 
 This repo also anchors the shared skill topology: one company-wide skill base plus one private overlay per Prime/ally. The same shared layer should be reflected in Obsidian, Notion, GitHub, Claude, Codex, Claw / OpenClaw, and Hermes.
 
-Start with the [build methodology](.ai/BUILD_PLAYBOOK.md). Use the [quality gates](.ai/QUALITY_GATES.md) and [anti-pattern catalog](.ai/ANTI_PATTERNS.md) during planning, implementation, and review. Record reusable findings in the [lessons ledger](docs/LESSONS.md), track direction in the [roadmap](docs/ROADMAP.md), and review release history in the [changelog](docs/CHANGELOG.md).
+Start with the [build methodology](.ai/BUILD_PLAYBOOK.md). For evidence-driven AI systems, use the [Core Intelligence Architecture](.ai/CORE_INTELLIGENCE_ARCHITECTURE.md) as an optional domain-neutral reference pattern. Use the [quality gates](.ai/QUALITY_GATES.md) and [anti-pattern catalog](.ai/ANTI_PATTERNS.md) during planning, implementation, and review. Record reusable findings in the [lessons ledger](docs/LESSONS.md), track direction in the [roadmap](docs/ROADMAP.md), and review release history in the [changelog](docs/CHANGELOG.md).
 
 ## Index
 
 - [Build Methodology](.ai/BUILD_PLAYBOOK.md)
+- [Core Intelligence Architecture](.ai/CORE_INTELLIGENCE_ARCHITECTURE.md)
 - [Quality Gates](.ai/QUALITY_GATES.md)
 - [Anti-Pattern Catalog](.ai/ANTI_PATTERNS.md)
 - [Lessons Ledger](docs/LESSONS.md)

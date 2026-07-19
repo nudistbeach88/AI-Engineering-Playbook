@@ -108,6 +108,12 @@ Project context should identify the goal, users, current milestone, constraints,
 
 Start from user and system boundaries. Preserve separation of concerns, explicit interfaces, and understandable dependency direction. Avoid abstractions without demonstrated repetition or change pressure. Record consequential decisions and their tradeoffs.
 
+## Core Intelligence Architecture
+
+Evidence-driven AI products may need more than structured records and generated summaries. When a system must build an explainable understanding of entities over time, use the [Core Intelligence Architecture](CORE_INTELLIGENCE_ARCHITECTURE.md) as a reference pattern.
+
+The pattern connects acquisition, canonical entities, evidence, relationships, conclusions, confidence, human decisions, learning events, intelligence completeness, recommendations, and delivery views. Adopt only the capabilities justified by real product decisions and evidence; the pattern is neither a required microservice topology nor permission to simulate intelligence and call it production-ready.
+
 ## User Experience First Engineering
 
 Implementation is successful only when the intended experience works for the user. Define the user journey and observable outcomes before choosing internal mechanisms. Include accessibility, failure states, latency, and recovery where relevant.
