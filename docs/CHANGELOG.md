@@ -2,6 +2,19 @@
 
 All notable changes to the AI Engineering Playbook are recorded here. Versions describe methodology releases, not application releases, and use semantic versioning.
 
+## [Unreleased]
+
+### Added
+
+- Added a domain-neutral Core Intelligence Architecture covering acquisition, canonical entities, evidence, relationships, explainable conclusions, confidence, human decisions, learning events, intelligence completeness, recommendations, and delivery views.
+- Added a six-level capability maturity model from data storage through bounded autonomous recommendations.
+
+### Changed
+
+- Linked the new architecture from the parent build methodology and repository index.
+- Clarified that specialized architecture patterns remain optional and that simulated intelligence must not be presented as production capability.
+- Updated the roadmap to reflect the approved architecture while continuing to defer organization-wide maturity scoring.
+
 ## [0.2.1] - 2026-07-11
 
 ### Changed

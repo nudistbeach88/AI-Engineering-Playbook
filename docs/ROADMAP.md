@@ -4,12 +4,12 @@ The roadmap records direction without committing to speculative documentation. I
 
 ## Current Focus
 
-- Complete the Version 0.2.1 refinement for evidence integrity, source-of-truth clarity, proportional risk gates, naming and version consistency, and Mental Model First communication.
-- Preserve the lean structure and review the release before it is committed.
+- Evaluate the Core Intelligence Architecture against real evidence-driven products and refine only where implementation reveals a reusable gap.
+- Preserve the lean parent methodology while keeping specialized reference patterns explicit and optional.
 
 ## Next Improvements
 
-- Use Version 0.2.1 on real projects and collect concrete friction, failures, exceptions, and successful practices.
+- Use the Playbook on real projects and collect concrete friction, failures, exceptions, and successful practices.
 - Evaluate accepted lessons or equivalent recoverable evidence before making substantive methodology changes. Editorial corrections do not require a formal lesson.
 - Keep the core documents consistent and concise.
 
@@ -24,11 +24,12 @@ The roadmap records direction without committing to speculative documentation. I
 - Established the Version 0.1.0 repository structure and core methodology.
 - Defined initial quality gates and AI engineering anti-patterns.
 - Established version history and an evidence-led evolution path.
+- Defined a domain-neutral Core Intelligence Architecture and capability maturity model for evidence-driven AI systems.
 
 ## Deferred
 
 - Comprehensive templates, checklists, role catalogs, and prompt libraries.
 - Tool-, framework-, and language-specific guidance.
-- Automation, governance machinery, and maturity scoring.
+- Automation, governance machinery, and organization-wide maturity scoring.
 
 These remain deferred until repeated project experience demonstrates a clear need.
